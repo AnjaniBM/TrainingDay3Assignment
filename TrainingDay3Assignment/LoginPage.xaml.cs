@@ -22,6 +22,7 @@ namespace TrainingDay3Assignment
             if(uName.Text == "admin" && pass.Text == "admin")
             {
                 DisplayAlert("Login Success", "Success", "OK");
+                uName.Text = null; pass.Text = null;
 
 
             }
@@ -29,6 +30,7 @@ namespace TrainingDay3Assignment
             {
                 DisplayAlert("Login Failed", "Login Failed! Try again.", "OK");
 
+                uName.Text = null; pass.Text = null;
 
 
             }
